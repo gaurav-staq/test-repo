@@ -44,15 +44,15 @@ function toBase62(n) {
   return result;
 }
 
-function fromBase62(s) {
-  var digits = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  var result = 0;
-  for (var i=0 ; i<s.length ; i++) {
-    var p = digits.indexOf(s[i]);
-    if (p < 0) {
-      return NaN;
-    }
-    result += p * Math.pow(digits.length, s.length - i - 1);
-  }
-  return result;
-}
+// function fromBase62(s) {
+//   var digits = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+//   var result = 0;
+//   for (var i=0 ; i<s.length ; i++) {
+//     var p = digits.indexOf(s[i]);
+//     if (p < 0) {
+//       return NaN;
+//     }
+//     result += p * Math.pow(digits.length, s.length - i - 1);
+//   }
+//   return result;
+// }
